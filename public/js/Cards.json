@@ -1,0 +1,14 @@
+var Cards = [{
+    'name': 'Anthony Plummer',
+    'avatar': 'anthony-avatar.jpg',
+    'hero': 'anthony-background.jpg',
+    'primaryColor': 'aqua',
+    'ctaColor': 'purple',
+    'contactItem': {
+        'phone': '(609) 977-6955',
+        'mobile': '(609) 977-6955',
+        'email': 'anthony@psda.com'
+    }
+}];
+
+var content = [{}];

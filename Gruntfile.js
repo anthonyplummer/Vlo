@@ -59,7 +59,7 @@ module.exports = function(grunt) {
        },
        js: {
          src: [
-           '<%= project.assets %>/**/*.js',
+           '<%= project.assets %>/js/**/*.js',
          ],
          dest: '<%= project.assets %>/main_src.js',
        }
@@ -71,8 +71,7 @@ module.exports = function(grunt) {
     sass: {
       dev: {
         options: {
-          style: 'expanded',
-          compass: true
+          style: 'compressed',
         },
         files: {
           '<%= project.assets %>/test/css/main.css': '<%= project.scss %>',
@@ -81,7 +80,6 @@ module.exports = function(grunt) {
       dist: {
         options: {
           style: 'compressed',
-          compass: true
         },
         files: {
           '<%= project.assets %>/css/main.css': '<%= project.scss %>',
@@ -105,7 +103,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-livereload');
   grunt.loadNpmTasks('grunt-contrib-compass');
 
   grunt.registerTask('test', ['jshint']);
